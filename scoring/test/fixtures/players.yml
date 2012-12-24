@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  imageUrl: MyString
+  battingOrientation: MyString
+  bowlingOrientation: MyString
+  isWicketkeeper: false
+  username: MyString
+  password: MyString
+
+two:
+  name: MyString
+  imageUrl: MyString
+  battingOrientation: MyString
+  bowlingOrientation: MyString
+  isWicketkeeper: false
+  username: MyString
+  password: MyString

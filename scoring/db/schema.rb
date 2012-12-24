@@ -11,7 +11,26 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121222032708) do
+ActiveRecord::Schema.define(:version => 20121222234438) do
+
+  create_table "players", :force => true do |t|
+    t.string   "name"
+    t.string   "imageUrl"
+    t.string   "battingOrientation"
+    t.string   "bowlingOrientation"
+    t.boolean  "isWicketkeeper"
+    t.string   "username"
+    t.string   "password"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+  end
+
+  create_table "team_player_assocs", :force => true do |t|
+    t.integer  "team_id"
+    t.integer  "player_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "teams", :force => true do |t|
     t.string   "name"

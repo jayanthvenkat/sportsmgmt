@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @player.name %>
+</p>
+
+<p>
+  <b>Imageurl:</b>
+  <%= @player.imageUrl %>
+</p>
+
+<p>
+  <b>Battingorientation:</b>
+  <%= @player.battingOrientation %>
+</p>
+
+<p>
+  <b>Bowlingorientation:</b>
+  <%= @player.bowlingOrientation %>
+</p>
+
+<p>
+  <b>Iswicketkeeper:</b>
+  <%= @player.isWicketkeeper %>
+</p>
+
+<p>
+  <b>Username:</b>
+  <%= @player.username %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%= @player.password %>
+</p>
+
+
+<%= link_to 'Edit', edit_player_path(@player) %> |
+<%= link_to 'Back', players_path %>
+<%= link_to 'Associate Player with Team', new_team_player_assoc_path(:playerId => @player) %>
